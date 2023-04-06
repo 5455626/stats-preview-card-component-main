@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Stats preview card component</title>
+
+    <style>
+      * {
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        font-family: "Hanken Grotesk", sans-serif;
+        background-color: #0d0618;
+      }
+
+      .con {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        box-shadow: 5px 5px 20px blanchedalmond;
+        background-color: #271147;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .stats-img {
+        width: 450px;
+        background-image: linear-gradient(
+            rgba(79, 34, 142, 0.4),
+            rgba(79, 34, 142, 0.4)
+          ),
+          url("./images/image-header-desktop.jpg");
+        height: 350px;
+        background-size: cover;
+      }
+
+      .stats-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 450px;
+        padding: 60px;
+      }
+
+      h3 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #f3ebfd;
+      }
+      h3 span {
+        color: #8338ec;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 20px;
+      }
+      .stats-num {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .first {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-weight: 700;
+        font-size: 20px;
+        color: #f3ebfd;
+      }
+
+      .first span {
+        display: block;
+        color: #999;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 0.6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="stats-text">
+        <h3>Get <span>insights</span> that help your business grow.</h3>
+        <p class="stats-per">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="stats-num">
+          <div class="first">10K+ <span>companies</span></div>
+          <div class="first">314 <span>templates</span></div>
+          <div class="first">12M+ <span>queries</span></div>
+        </div>
+      </div>
+      <div class="stats-img">
+        <!-- <img src="./images/image-header-desktop.jpg" alt="" /> -->
+      </div>
+    </div>
+  </body>
+</html>
